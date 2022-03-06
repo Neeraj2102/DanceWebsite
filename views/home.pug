@@ -1,0 +1,51 @@
+extends base.pug
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+   section#introSection 
+    div Welcome to Neeraj Dance Academy 
+    div.small Eat Sleep Dance Repeat
+
+   section#MissonSection 
+    h2 Our Misson 
+    div.card 
+        h3 Dance Perfection
+        div.card-box 
+            div.card-img
+                img(src="/static/img/img1.jpg")
+
+
+            div.card-content
+                p this is best dance academy of Universe.
+    div.card 
+        h3 Dance the way you like
+         div.card-box 
+            div.card-img
+                img(src="/static/img/img2.jpg")
+
+
+            div.card-content
+                h6 this is best dance academy of Universe.
+    div.card 
+        h3 Expert Teaching
+         div.card-box 
+            div.card-img
+                img(src="/static/img/img3.jpg")
+
+
+            div.card-content
+                h6 this is best dance academy of Universe.
+    
+   section#sponsorsSection 
+    h2 Our sponsors
+    div#sponsors 
+        img(src="/static/img/logo1.png",alt="sponsor Image",class="spImage")
+        img(src="/static/img/logo2.png",alt="sponsor Image",class="spImage")
+        img(src="/static/img/logo3.png",alt="sponsor Image",class="spImage")
+        img(src="/static/img/logo4.png",alt="sponsor Image",class="spImage")
+    
